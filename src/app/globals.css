@@ -62,4 +62,7 @@ li, li p {
 ol ol {
 	list-style: lower-alpha;
 }
+del {
+	text-decoration: underline;
+}
 
