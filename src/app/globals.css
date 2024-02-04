@@ -45,9 +45,47 @@ h1 {
 	padding-bottom: 2em;
 }
 h1 { font-size: 2.5rem; }
+
 h2,h3,h4,h5,h6 {
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 }
+
+h1 { counter-reset: H2; }
+
+h2:before {
+	content: counter(H2) ". ";
+	counter-increment: H2;
+}
+h2 { counter-reset: H3; }
+
+h3:before {
+	content: counter(H2)"." counter(H3) ". ";
+	counter-increment: H3;
+}
+h3 { counter-reset: H4;}
+
+
+h4:before {
+	content: counter(H2)"." counter(H3) "." counter(H4) ". ";
+	counter-increment: H4;
+}
+h4 { counter-reset: H5;}
+
+
+h5:before {
+	content: counter(H2)"." counter(H3) "." counter(H4) "." counter(H5) ". ";
+	counter-increment: H5;
+}
+h5 { counter-reset: H6;}
+
+
+h6:before {
+	content: counter(H2)"." counter(H3) "." counter(H4) "." counter(H5) "." counter(H6) ". ";
+	counter-increment: H6;
+}
+
+
+
 
 ul {
 	padding: 0 0 0 1.5em;
