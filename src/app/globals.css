@@ -30,9 +30,37 @@ html {
 	font-family: 'CMU Serif';
 	font-size: 14px;
 }
-body {
-	padding: 2em 7rem;
+* {
+	box-sizing: border-box;
 }
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+article {
+	padding: 10vh 5vw;
+	padding-top: 8vh;
+	height: 100vh;
+	overflow-y: auto;
+	position: absolute;
+	top: 3.5vh;
+}
+
+nav {
+	position: absolute;
+	background-color: rgb(95, 95, 95);
+	width: 100%;
+	margin: 0;
+	padding: 0.5em 1em;
+}
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
 .katex {
 	font-size: 1em;
 }
@@ -84,9 +112,6 @@ h6:before {
 	counter-increment: H6;
 }
 
-
-
-
 ul {
 	padding: 0 0 0 1.5em;
 	margin: 0;
@@ -102,3 +127,15 @@ del {
 	text-decoration: underline;
 }
 
+strong del {
+	text-decoration: none;
+	font-weight: normal;
+	font-variant: small-caps;
+}
+
+div.home {
+	padding: 5vh 15vw;
+}
+div.disclaimer {
+	font-style: italic;
+}

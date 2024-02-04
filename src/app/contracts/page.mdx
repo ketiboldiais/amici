@@ -1,3 +1,5 @@
+import MdxLayout from '../components/mdx-layout';
+
 # Contracts
 ## Applicable Law
 * Before analyzing a contract issue, a court must determine which law applies.
@@ -131,11 +133,18 @@
 			3. If a time for shipment is missing, the court will assume “a reasonable time”.
 			4. If a time for payment is missing, the court will assume payment is due when the buyer receives the goods.'
 		2. Under the **_first shot rule_** (a minority rule), if the differing terms are the offeror’s terms, then the terms become part of the contract, since the offeror is the “master of the offer.”
-		3. Under the **_California rule_** (used by California and a minority of jurisdictions), the court will treat the differing terms as additional terms.
+		3. Under the **_California rule_** (the rule in California and a minority of jurisdictions), the court will treat the differing terms as additional terms.
+
+#### Acceptance by Shipment
+- An offer to buy goods may be accepted by shipping the goods, unless the offer specifies otherwise.
+	- __~comment~__. Courts often apply this rule to disputes over **_purchase orders_**.
+
 
 	 	
 
 
 
 
- 
+export default function MDXPage({children})  {
+	return <MdxLayout>{children}</MdxLayout>
+}
