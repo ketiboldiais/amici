@@ -32,12 +32,7 @@ export default function Home() {
         </p>
         <p>
           The views expressed at, or through, this site are those of the
-          individual authors writing in their individual capacities only – not
-          those of their respective employers, the ABA, or committee/task force
-          as a whole. All liability with respect to actions taken or not taken
-          based on the contents of this site are hereby expressly disclaimed.
-          The content on this posting is provided "as is;" no representations
-          are made that the content is error-free.
+          author writing in their individual capacities only. All liability with respect to actions taken or not taken based on the contents of this site are hereby expressly disclaimed. The content on this posting is provided "as is;" no representations are made that the content is error-free.
         </p>
       </div>
     </div>
