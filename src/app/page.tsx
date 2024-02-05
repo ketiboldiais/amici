@@ -1,12 +1,22 @@
+import Link from "next/link";
+
+type LinkObj = { path: string; label: string };
+const links: LinkObj[] = [
+  { path: "/contracts", label: "Contracts" },
+  { path: "/constitutional-law", label: "Constitutional Law" },
+];
+
 export default function Home() {
   return (
     <div className={"home"}>
       <h1>Amici</h1>
       <p>This is a collection of various law school outlines.</p>
       <ul>
-        <li>
-          <a href="/contracts">Contracts</a>
-        </li>
+        {links.map((link) => (
+          <li key={link.path}>
+            <Link href={link.path}>{link.label}</Link>
+          </li>
+        ))}
       </ul>
       <div className={"disclaimer"}>
         <p>
@@ -31,8 +41,12 @@ export default function Home() {
           employers.
         </p>
         <p>
-          The views expressed at, or through, this site are those of the
-          author writing in their individual capacities only. All liability with respect to actions taken or not taken based on the contents of this site are hereby expressly disclaimed. The content on this posting is provided "as is;" no representations are made that the content is error-free.
+          The views expressed at, or through, this site are those of the author
+          writing in their individual capacities only. All liability with
+          respect to actions taken or not taken based on the contents of this
+          site are hereby expressly disclaimed. The content on this posting is
+          provided "as is;" no representations are made that the content is
+          error-free.
         </p>
       </div>
     </div>
