@@ -1,20 +1,21 @@
 import Link from "next/link";
 
 type LinkObj = { path: string; label: string };
-const links: LinkObj[] = [
+const outlineLinks: LinkObj[] = [
   { path: "/contracts", label: "Contracts" },
   { path: "/constitutional-law", label: "Constitutional Law" },
+  { path: "/federal-courts", label: "Federal Courts" },
 ];
 
 export default function Home() {
   return (
     <div className={"home"}>
       <h1>Amici</h1>
-      <p>This is a collection of various law school outlines.</p>
+      <p>This is a repository of my outlines from law school.</p>
       <ul>
-        {links.map((link) => (
+        {outlineLinks.map((link) => (
           <li key={link.path}>
-            <Link href={link.path}>{link.label}</Link>
+            <Link href={'/outlines'+link.path}>{link.label}</Link>
           </li>
         ))}
       </ul>
