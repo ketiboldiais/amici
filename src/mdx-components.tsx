@@ -1,19 +1,22 @@
-import type { MDXComponents } from 'mdx/types'
-import {ReactNode} from 'react'
+import type { MDXComponents } from "mdx/types";
+import { ReactNode } from "react";
 
-const Brief = ({children}:{children: ReactNode}) => {
+const Brief = (
+  { children, title }: { children: ReactNode; title?: ReactNode },
+) => {
   return (
-    <div className={'brief'}>
+    <div className={"brief"}>
+      {title && <span className={"brief-title"}>{title}</span>}
       {children}
     </div>
-  )
-}
- 
+  );
+};
+
 export function useMDXComponents(
-	components: MDXComponents
+  components: MDXComponents,
 ): MDXComponents {
   return {
     ...components,
     Brief,
-  }
+  };
 }
