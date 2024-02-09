@@ -30,9 +30,11 @@ html {
 	font-family: 'CMU Serif';
 	font-size: 14px;
 }
+
 * {
 	box-sizing: border-box;
 }
+
 body {
 	margin: 0;
 	padding: 0;
@@ -41,13 +43,14 @@ body {
 }
 
 article {
-	padding: 10vh 5vw;
+	padding: 8vw;
 	padding-top: 8vh;
 	height: 100vh;
 	overflow-y: auto;
 	position: absolute;
 	top: 3.5vh;
 }
+
 
 nav {
 	position: absolute;
@@ -56,6 +59,7 @@ nav {
 	margin: 0;
 	padding: 0.5em 1em;
 }
+
 nav a {
 	color: white;
 	text-decoration: none;
@@ -64,47 +68,75 @@ nav a {
 .katex {
 	font-size: 1em;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	padding: 0.5rem 0 0 0;
 	margin: 0;
 }
+
 h1 {
 	text-align: center;
 	padding-bottom: 2em;
 }
-h1 { font-size: 2.5rem; }
 
-h2,h3,h4,h5,h6 {
+h1 {
+	font-size: 2.5rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-size: 1.3rem;
 }
 
-h1 { counter-reset: H2; }
+h1 {
+	counter-reset: H2;
+}
 
 h2:before {
 	content: counter(H2) ". ";
 	counter-increment: H2;
 }
-h2 { counter-reset: H3; }
+
+h2 {
+	counter-reset: H3;
+}
 
 h3:before {
 	content: counter(H2)"." counter(H3) ". ";
 	counter-increment: H3;
 }
-h3 { counter-reset: H4;}
+
+h3 {
+	counter-reset: H4;
+}
 
 
 h4:before {
 	content: counter(H2)"." counter(H3) "." counter(H4) ". ";
 	counter-increment: H4;
 }
-h4 { counter-reset: H5;}
+
+h4 {
+	counter-reset: H5;
+}
 
 
 h5:before {
 	content: counter(H2)"." counter(H3) "." counter(H4) "." counter(H5) ". ";
 	counter-increment: H5;
 }
-h5 { counter-reset: H6;}
+
+h5 {
+	counter-reset: H6;
+}
 
 
 h6:before {
@@ -116,13 +148,17 @@ ul {
 	padding: 0 0 0 1.5em;
 	margin: 0;
 }
-li, li p {
+
+li,
+li p {
 	padding: 0;
 	margin: 0;
 }
+
 ol ol {
 	list-style: lower-alpha;
 }
+
 del {
 	text-decoration: underline;
 }
@@ -136,6 +172,48 @@ strong del {
 div.home {
 	padding: 5vh 15vw;
 }
+
 div.disclaimer {
 	font-style: italic;
+}
+
+a {
+	color: rgb(75, 149, 186);
+	text-decoration: none;
+	border-bottom: 1px dotted rgb(75, 149, 186);
+}
+
+blockquote {
+	background-color: rgb(230, 230, 230);
+	border-radius: 5px;
+	padding: 0.1em 10px;
+	margin: 1em 2em;
+}
+
+aside {
+	font-size: 0.85rem;
+	color: rgb(108, 150, 150);
+	border-left: 3px solid rgb(196, 219, 219);
+	margin-left: 1.1rem;
+}
+aside p {
+	padding: 0 0 0 0; 
+	margin: 0.5rem 0.5rem;
+}
+
+@media (min-width: 800px) {
+	article {
+		padding: 10vh 22vw;
+	}
+	aside {
+		border-left: none;
+		float: right;
+		clear: right;
+		margin-right: -22vw;
+		margin-left: 0;
+		text-align: left;
+		top: -3em;
+		width: 20vw;
+		margin-top: 1rem;
+	}
 }
