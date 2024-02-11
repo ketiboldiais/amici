@@ -48,7 +48,7 @@ article {
 	height: 100vh;
 	overflow-y: auto;
 	position: absolute;
-	top: 3.5vh;
+	top: 5%;
 }
 
 
@@ -160,14 +160,17 @@ ol ol {
 }
 
 del {
-	text-decoration: underline;
-}
-
-strong del {
 	text-decoration: none;
 	font-weight: normal;
 	font-variant: small-caps;
 }
+strong del {
+	font-weight: normal;
+	text-decoration: underline;
+	font-variant: normal;
+}
+
+
 
 div.home {
 	padding: 5vh 15vw;
