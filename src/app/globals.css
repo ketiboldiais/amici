@@ -42,6 +42,12 @@ body {
 	overflow-y: hidden;
 }
 
+div.home {
+	overflow-y: auto;
+	position: absolute;
+	height: 100vh;
+}
+
 article {
 	padding: 8vw;
 	padding-top: 8vh;
