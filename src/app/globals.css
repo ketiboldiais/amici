@@ -1,4 +1,36 @@
 @font-face {
+	font-family: 'TP';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../assets/serif_main_regular.ttf');
+}
+
+
+@font-face {
+	font-family: 'TP';
+	font-style: normal;
+	font-weight: bold;
+	src: url('../assets/serif_main_bold.ttf');
+}
+
+
+@font-face {
+	font-family: 'TP';
+	font-style: italic;
+	font-weight: normal;
+	src: url('../assets/serif_main_italics.ttf');
+}
+
+
+@font-face {
+	font-family: 'TP-serif';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../assets/sans_serif_main.ttf');
+}
+
+
+@font-face {
 	font-family: 'CMU Serif';
 	font-style: normal;
 	font-weight: normal;
@@ -27,7 +59,7 @@
 }
 
 html {
-	font-family: 'CMU Serif';
+	font-family: 'TP';
 	font-size: 12px;
 }
 
@@ -84,6 +116,7 @@ h5,
 h6 {
 	padding: 0.5rem 0 0 0;
 	margin: 0;
+	font-family: 'TP-serif';
 }
 
 h1 {
@@ -183,9 +216,7 @@ div.home {
 	padding: 5vh 15vw;
 }
 
-div.disclaimer {
-	font-style: italic;
-}
+
 
 a {
 	color: rgb(75, 149, 186);

@@ -39,9 +39,7 @@ export default function Home() {
           – is applicable or appropriate to your particular situation. Use of,
           and access to, this website or any of the links or resources contained
           within the site do not create an attorney-client relationship between
-          the reader, user, or browser and website authors, contributors,
-          contributing law firms, or committee members and their respective
-          employers.
+          the reader, user, or browser and website author.
         </p>
         <p>
           The views expressed at, or through, this site are those of the author
