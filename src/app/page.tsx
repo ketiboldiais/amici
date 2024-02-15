@@ -4,6 +4,7 @@ type LinkObj = { path: string; label: string };
 const outlineLinks: LinkObj[] = [
   { path: "/contracts", label: "Contracts" },
   { path: "/constitutional-law", label: "Constitutional Law" },
+  { path: "/criminal-law", label: "Criminal Law" },
   { path: "/federal-courts", label: "Federal Courts" },
   { path: "/real-property", label: "Real Property" },
 ];
