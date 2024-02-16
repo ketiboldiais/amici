@@ -87,9 +87,8 @@ article {
 	height: 100vh;
 	overflow-y: auto;
 	position: absolute;
-	top: 5%;
+	top: 30px;
 }
-
 
 nav {
 	position: absolute;
@@ -254,6 +253,11 @@ aside p {
 	text-align: center;
 }
 
+.toc ol {
+	padding: 0;
+	padding-left: 0.9rem;
+}
+
 @media (min-width: 800px) {
 	article {
 		padding: 10vh 22vw;
@@ -270,3 +274,4 @@ aside p {
 		margin-top: 1rem;
 	}
 }
+

@@ -2,32 +2,42 @@ import MdxLayout from '../../components/mdx-layout';
 
 # Criminal Law
 
-_Disclaimer._ Criminal law is largely governed by state law. This outline, however, covers general principles of criminal law and cites to the Model Penal Code extensively. Not every state follows the Model Penal Code.
+<Toc>
 
 1. [Crimes Against the Person](#crimes-against-the-person)
-	1. [Simple Assault](#simple-assault)
-	2. [Aggravated Assault](#aggravated-assault)
+	1. [Battery](#battery)
+	2. [Assault](#assault)
+	3. [Mayhem](#mayhem)
+	4. [Kidnapping](#kidnapping)
+
+</Toc>
 
 
 ## Crimes Against the Person
-### Simple Assault
-- A person is guilty of simple assault if at least one of these conditions is met:[^mpc211.1(1)]
-	1. the person attempted to cause bodily injury to another;
-	2. the person purposely, knowingly, or recklessly caused bodily injury to another;
-	3. the person negligently caused bodily injury to another with a deadly weapon; or
-	4. the person attempted to put another in fear or imminent serious bodily injurty by physical menace.
+### Battery
+- A person is guilty of battery if he intentionally[^johnson_v_us] causes bodily injury[^dauzat] or an offensive touching[^touching] to another.
 
-[^mpc211.1(1)]: _See_ ~Model Penal Code~ § 211.1(1).
+[^johnson_v_us]: _See_ _Johnson v. United States_, 559 U.S. 133, 139 (2010) (“[T]he common-law crime of battery ... consisted of the intentional application of unlawful force against the person of another”).
+[^dauzat]: _See_ _State v. Gordon_, 560 N.W.2d 4 (Iowa 1997) (finding that a bruise on the victim’s skin was not a bodily injury because there was no evidence that the victim suffered pain or illness from the blow).
+[^touching]: _See e.g._ _United States v. Bayes_, 210 F.3d 64 (1st Cir. 2000) (finding that deliberately touching a stewardess’s buttocks is an offensive touching); _Wood v. Common Wealth_, 140 S.E. 114 (Va. 1927) (placing one’s hands on another’s bosom is an offensive touching); _Lynch v. Commonwealth_, 109 S.E. 427 (1921) (a black male defendant told a white female victim that he wanted to kiss her; after she refused, the defendant touched her and said he meant not insult and left – the court found the touch an offensive touching); _Weaver v. State_, 146 S.W. 927 (1912) (kissing another without her consent is an offensive touching, but not if her conduct indicates she found it agreeable).
 
-### Aggravated Assault
-- A person is guilty of aggravated assault if at least one of these conditions is met:[^mpc211.1(2)]
-	1. the person attempted to cause bodily injury to another with extreme indifference to human life;
-	2. the person purposely, knowingly, or recklessly caused bodily injury to another with extreme indifference to human life;
-	3. the person attempted to cause bodily injury to another with a deadly weapon; or
-	4. the person purposely or knowingly caused bodily injury to another with a deadly weapon.
-	
+### Assault
+- A person is guilty of assault if he (1) intentionally causes another in reasonable apprehension of imminent injury[^harrod], or (2) attempts to commit a battery[^mpc211.1].
 
-[^mpc211.1(2)]: _See_ ~Model Penal Code~ § 211.2(2).
+[^harrod]: _See_ _Harrod v. S._, 499 A.2d 959 (Md. App. 1985) (threatening another with a gun constitutes an assault). 
+[^mpc211.1]: _See_ ~Model Penal Code~ § 211.1 (the Model Penal Code groups assault and battery together under the label “assault”).
+
+### Mayhem
+- A person is guilty of mayhem if he permanently dismembers or disables a body part.[^hughes_258]
+
+[^hughes_258]: _See_ ~Thomas W. Hughes~, ~A Treatise on Criminal Law and Procedure~ 258 (1919).
+
+### Kidnapping
+- A person is guilty of kidnapping if: (1) he either (a) removes the victim from his place of residence or business, (b) moves the victim a substantial distance from where he is found, or (c) confines the victim for a substantial period in an isolated place; __and__ (2) he does so for at least one of these purposes: (a) to obtain ransom or reward, (b) to use the victim as a shield or hostage, (c) to facilitate a felony or escape, (d) to bodily injure the victim, or (e) to to terrorize the victim.[^mpc_212.1]
+
+[^mpc_212.1]: _See_ ~Model Penal Code~ § 212.1.
+
+
 
 
 export default function MDXPage({children})  {
