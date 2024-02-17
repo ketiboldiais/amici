@@ -80,6 +80,10 @@ div.home {
 	height: 100vh;
 }
 
+code {
+	font-family: 'CMU Serif';
+}
+
 article {
 	padding: 8vw;
 	padding-top: 8vh;
@@ -183,8 +187,8 @@ h6:before {
 	counter-increment: H6;
 }
 
-ul {
-	padding: 0 0 0 1.5em;
+ul, ol {
+	padding: 0 0 0 1em;
 	margin: 0;
 }
 
@@ -231,7 +235,7 @@ blockquote {
 }
 
 aside {
-	font-size: 0.85rem;
+	font-size: 0.9rem;
 	color: rgb(108, 150, 150);
 	border-left: 3px solid rgb(196, 219, 219);
 	margin-left: 1.1rem;

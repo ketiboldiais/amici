@@ -2,10 +2,11 @@ import Link from "next/link";
 
 type LinkObj = { path: string; label: string };
 const outlineLinks: LinkObj[] = [
-  { path: "/contracts", label: "Contracts" },
   { path: "/constitutional-law", label: "Constitutional Law" },
+  { path: "/contracts", label: "Contracts" },
   { path: "/criminal-law", label: "Criminal Law" },
   { path: "/federal-courts", label: "Federal Courts" },
+  { path: "/federal-income-tax", label: "Federal Income Tax" },
   { path: "/real-property", label: "Real Property" },
 ];
 

@@ -1,7 +1,7 @@
 import type { MDXComponents } from "mdx/types";
 import { ReactNode } from "react";
 
-const Toc = ({ children }: { children: ReactNode }) => {
+const TOC = ({ children }: { children: ReactNode }) => {
   return (
     <div className={"toc"}>
       {children}
@@ -26,6 +26,6 @@ export function useMDXComponents(
   return {
     ...components,
     Brief,
-    Toc,
+    TOC,
   };
 }
