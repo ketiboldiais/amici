@@ -2,6 +2,7 @@ import Link from "next/link";
 
 type LinkObj = { path: string; label: string };
 const outlineLinks: LinkObj[] = [
+  { path: "/civil-procedure", label: "Civil Procedure" },
   { path: "/constitutional-law", label: "Constitutional Law" },
   { path: "/contracts", label: "Contracts" },
   { path: "/criminal-law", label: "Criminal Law" },

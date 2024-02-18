@@ -262,6 +262,16 @@ aside p {
 	padding-left: 0.9rem;
 }
 
+table {
+	border-collapse: collapse;
+	width: 90%;
+	margin: 0.8rem auto;
+}
+
+td {
+	border: solid thin grey;
+}
+
 @media (min-width: 800px) {
 	article {
 		padding: 10vh 22vw;
