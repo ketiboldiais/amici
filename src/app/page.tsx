@@ -20,36 +20,33 @@ export default function Home() {
       <ul>
         {outlineLinks.map((link) => (
           <li key={link.path}>
-            <Link href={'/outlines'+link.path}>{link.label}</Link>
+            <Link href={"/outlines" + link.path}>{link.label}</Link>
           </li>
         ))}
       </ul>
       <div className={"disclaimer"}>
         <p>
-          The information provided on this website does not, and is not intended
-          to, constitute legal advice. All information, content, and materials
-          available on this site are for general informational purposes only.
-          Information on this website may not constitute the most up-to-date
-          legal or other information.
+          <b>Disclaimer.</b>{" "}
+          This website’s content does not, and is not intended to, constitute
+          legal advice. All this website’s contents are for general
+          informational purposes only. This website’s content may not be the
+          most up-to-date.
         </p>
         <p>
-          You should contact your attorney to obtain advice with respect to any
-          particular legal matter. No reader, user, or browser of this site
-          should act or refrain from acting on the basis of information on this
-          site without first seeking legal advice from counsel in the relevant
-          jurisdiction. Only your individual attorney can provide assurances
-          that the information contained herein – and your interpretation of it
-          – is applicable or appropriate to your particular situation. Use of,
-          and access to, this website or any of the links or resources contained
-          within the site do not create an attorney-client relationship between
-          the reader, user, or browser and website author.
+          Contact your attorney to obtain advice on any particular legal matter.
+          No user of this website should act or refrain from acting based on
+          this website’s content without first seeking legal advice from counsel
+          in the relevant jurisdiction. Only your individual attorney can assure
+          you that this website’s content – and your interpretation of it –
+          applies to your particular situation. Using or accessing this website
+          or any of its links or resources do not create an attorney-client
+          relationship between the user and website author.
         </p>
         <p>
-          The views expressed at, or through, this site are those of the author
-          writing in their individual capacities only. All liability with
-          respect to actions taken or not taken based on the contents of this
-          site are hereby expressly disclaimed. The content on this posting is
-          provided "as is;" no representations are made that the content is
+          The views expressed on this website are only the author’s. All
+          liability with respect to actions taken or not taken based on this
+          site’s content are expressly disclaimed. This website’s content is
+          provided "as is." No representations are made that the content is
           error-free.
         </p>
       </div>
