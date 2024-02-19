@@ -9,6 +9,7 @@ const outlineLinks: LinkObj[] = [
   { path: "/federal-courts", label: "Federal Courts" },
   { path: "/federal-income-tax", label: "Federal Income Tax" },
   { path: "/real-property", label: "Real Property" },
+  { path: "/torts", label: "Torts" },
 ];
 
 export default function Home() {
