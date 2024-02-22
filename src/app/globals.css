@@ -246,15 +246,18 @@ aside p {
 }
 
 .brief {
-	border: solid thin lightgrey;
+	border-left: solid 4px lightgrey;
 	margin: 0.5rem 1.2rem;
-	padding: 1rem;
+	padding: 0 0.5rem;
+}
+.brief-title {
+	cursor: pointer;
 }
 
 .brief .brief-title {
-	display: block;
+	/* display: block; */
 	font-weight: bold;
-	text-align: center;
+	/* text-align: center; */
 }
 
 .toc ol {

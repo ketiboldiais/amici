@@ -13,10 +13,10 @@ const Brief = (
   { children, title }: { children: ReactNode; title?: ReactNode },
 ) => {
   return (
-    <div className={"brief"}>
-      {title && <span className={"brief-title"}>{title}</span>}
+    <details className={"brief"}>
+      {title && <summary className={"brief-title"}>{title}</summary>}
       {children}
-    </div>
+    </details>
   );
 };
 
